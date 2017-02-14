@@ -1,0 +1,10 @@
+edu\app\reclamation\persistence\Reclamation.class
+edu\app\reclamation\util\AlimentationBD.class
+edu\app\reclamation\persistence\Administrateur.class
+edu\app\reclamation\persistence\TypeReclamation.class
+services\reclamation\ReclamationService.class
+services\reclamation\ReclamationServiceLocal.class
+edu\app\reclamation\persistence\Utilisateur.class
+services\authentification\AuthentificationService.class
+services\authentification\AuthentificationServiceLocal.class
+edu\app\reclamation\persistence\Etudiant.class

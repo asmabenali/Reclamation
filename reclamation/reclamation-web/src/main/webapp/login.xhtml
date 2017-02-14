@@ -1,0 +1,31 @@
+<html xmlns:h="http://java.sun.com/jsf/html">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:head>
+	<title>login</title>
+	<h:outputStylesheet library="css" name="screen.css"/>
+	</h:head>
+	
+	<body>
+		<p:panel header="Reclamation@Esprit" >
+			<p:messages autoUpdate="true" closable="true"/>
+			<h:form>
+				<h:panelGrid>
+					<h:outputText value="email" />
+						<p:inputText value="#{auth.email}" />
+						<h:outputText value="password" />
+						<p:password value="#{auth.password}" />
+						<p:commandButton value="login" action="#{auth.doLogin()}" ajax="false"/>
+				</h:panelGrid>
+			</h:form>
+		</p:panel>
+	
+	
+	</body>
+	</ui:composition>
+	</html>
